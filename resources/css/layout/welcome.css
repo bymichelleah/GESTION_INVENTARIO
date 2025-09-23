@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.nav {
+    display: flex;
+    gap: 40px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.nav a:hover {
+    color: rgb(226, 135, 17);
+}
+
+.botones {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.iniciar-sesion {
+    text-decoration: none;
+    background-color: rgb(240, 153, 41);
+    color: white;
+    padding: 12px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.registro {
+    text-decoration: none;
+    border: 2px solid rgb(240, 153, 41);
+    padding: 10px 12px;
+    border-radius: 20px;
+    color: rgb(240, 153, 41);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding-bottom: 80px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.ofertas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ofertas-1 img {
+    width: 280px;
+    height: 280px;
+}
+
+.ofertas-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ofertas-2 img {
+    width: 430px;
+    height: 170px;
+}
+
+.ofertas-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container-productos h2 {
+    text-align: center;
+}
+
+.ofertas h2 {
+    text-align: center;
+    color: rgb(59, 59, 59);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.productos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    padding-top: 20px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product img {
+    width: 150px;
+}
+
+.product p {
+    color: rgb(63, 63, 63);
+}
+
+.product h3 {
+    font-size: 17px;
+}
+
+.product h4 {
+    font-size: 20px;
+    color: rgb(8, 8, 8);
+    font-weight: 800;
+}
+
+footer p {
+    background-color: #fefdff;
+    color: rgb(107, 107, 107);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Sección contacto */
+.contacto {
+    padding: 60px 20px;
+    background: #000000;
+    font-family: Arial, sans-serif;
+}
+
+.contenedor-contacto {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+/* Información */
+.info-contacto h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.info-contacto p {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.info-contacto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-contacto li {
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+/* Formulario */
+.formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-contacto label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.formulario-contacto button {
+    padding: 12px;
+    background: #5b009b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contenedor-contacto {
+        grid-template-columns: 1fr;
+    }
+}
