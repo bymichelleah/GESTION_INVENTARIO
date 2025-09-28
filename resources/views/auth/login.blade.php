@@ -6,11 +6,12 @@
 @endsection
 
 @section('content')
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <div class="login-wrapper">
     <div class="login-container">
         <!-- Lado izquierdo con imagen -->
         <div class="login-left">
-            <!-- Si prefieres usar <img> en lugar de background, descomenta abajo -->
             {{-- <img src="{{ asset('resources/img/login.jpg') }}" alt="Login Image"> --}}
         </div>
 
@@ -68,6 +69,25 @@
                     {{ __('Login') }}
                 </button>
             </form>
+
+            <!-- Separador -->
+             <br>
+            <div class="social-divider" style="text-align: center;">
+                <span>o ingresa con</span>
+            </div>
+
+            <!-- Botones sociales -->
+            <div class="social-buttons">
+                <!-- GitHub -->
+                <a href="{{ route('auth.github') }}" class="btn-social github">
+                    <i class="fab fa-github"></i> Iniciar con GitHub
+                </a>
+
+                <!-- YouTube (realmente Google con scopes de YouTube)-->
+                <a href="{{ route('auth.youtube') }}" class="btn-social youtube">
+                    <i class="fab fa-youtube"></i> Iniciar con YouTube
+                </a>
+            </div>
         </div>
     </div>
 </div>

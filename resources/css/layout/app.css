@@ -13,7 +13,7 @@ body {
 
 /* Navbar */
 .navbar {
-    background: #004ba5;
+    background: rgb(240, 153, 41);
     color: white;
     padding: 1rem 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -48,7 +48,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #fe8008;
+    color: rgb(150, 89, 9);
 }
 
 /* Usuario logueado */

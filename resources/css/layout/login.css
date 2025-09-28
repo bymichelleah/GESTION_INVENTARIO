@@ -97,3 +97,71 @@
     border: 2px solid #5b009b;
     color: #5b009b;
 }
+
+/* Contenedor de botones sociales */
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+/* Estilos base de todos los botones sociales */
+.btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+/* Contenedor de botones sociales */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* espacio entre los botones */
+    margin-top: 20px;
+}
+
+/* Estilos base de todos los botones sociales */
+.btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px 14px; /* más pequeños */
+    border-radius: 6px;
+    font-size: 14px; /* texto más pequeño */
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+/* GitHub */
+.btn-social.github {
+    background-color: #24292f;
+}
+.btn-social.github:hover {
+    background-color: #000;
+}
+
+/* YouTube */
+.btn-social.youtube {
+    background-color: #ff0000;
+}
+.btn-social.youtube:hover {
+    background-color: #cc0000;
+}
+
+/* Íconos (Font Awesome) */
+.btn-social i {
+    font-size: 16px; /* más pequeño que antes */
+}

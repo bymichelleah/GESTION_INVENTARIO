@@ -27,4 +27,13 @@ Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 
+// GITHUB
+Route::get('login/github', [App\Http\Controllers\Auth\LoginController::class, 'redirectToGithub'])->name('auth.github');
+Route::get('login/github/callback', [App\Http\Controllers\Auth\LoginController::class, 'handleGithubCallback']);
+// YouTube Login
+Route::get('auth/youtube', [App\Http\Controllers\Auth\LoginController::class, 'redirectToYoutube'])->name('auth.youtube');
+Route::get('auth/youtube/callback', [App\Http\Controllers\Auth\LoginController::class, 'handleYoutubeCallback']);
+
+
+
 
