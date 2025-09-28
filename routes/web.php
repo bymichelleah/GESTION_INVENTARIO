@@ -1,12 +1,17 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+<<<<<<< HEAD
 use Laravel\Socialite\Facades\Socialite;
+=======
+use App\Http\Controllers\ProductController;
+>>>>>>> Gian
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('products.index');
 });
 
+<<<<<<< HEAD
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -37,3 +42,7 @@ Route::get('auth/youtube/callback', [App\Http\Controllers\Auth\LoginController::
 
 
 
+=======
+// CRUD para la web
+Route::resource('products', ProductController::class);
+>>>>>>> Gian

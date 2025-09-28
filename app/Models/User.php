@@ -48,10 +48,15 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+<<<<<<< HEAD
     // Relación con user_sessions
     public function sessions()
     {
         return $this->hasMany(UserSession::class);
     }
     
+=======
+
+
+>>>>>>> Gian
 }
