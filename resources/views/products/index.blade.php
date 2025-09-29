@@ -1,14 +1,16 @@
 @extends('layout')
 
 @section('content')
-    <div class="d-flex justify-content-between mb-3">
-        <a href="{{ route('products.create') }}" class="btn btn-primary">Agregar Producto</a>
-        
+    <div class="container mb-3">
+        <a href="{{ route('products.create') }}" class="btn shadow-sm" style="background-color: #ff6600; border-color: #ff6600; color: #fff;">+ Agregar Producto</a>
+    </div>
+
+    <div class="container d-flex justify-content-end mb-3">
         <input type="text" id="searchInput" class="form-control w-25" placeholder="Buscar producto...">
     </div>
 
-    <table class="table table-bordered" id="productsTable">
-        <thead>
+    <table class="table-hover table-striped rounded shadow-sm container table table-bordered" id="productsTable">
+        <thead class="table-dark">
             <tr>
                 <th>ID</th><th>Nombre</th><th>Descripción</th>
                 <th>Precio</th><th>Categoría</th><th>Marca</th><th>SKU</th>
@@ -39,6 +41,11 @@
             @endforelse
         </tbody>
     </table>
+
+    {{-- FOOTER STICKY --}}
+    <footer class="bg-dark text-white text-center py-3 mt-auto w-100" style="position: fixed; bottom: 0; left: 0;">
+        <p class="mb-0">© 2025 MIMITOS - Inventario de productos | Desarrollado en Laravel + Bootstrap</p>
+    </footer>
 
     <!-- buscador -->
     <script>
